@@ -10,19 +10,20 @@
  * };
  */
 class Solution {
-public:
-    int Helper(TreeNode* curr, int cnt) {
-        if (curr == nullptr) {
-            return cnt;
+    int ans;
+    int depth(TreeNode* rt){
+        if (rt == NULL) {
+            return 0;
         }
-        cnt++;
-        return max(Helper(curr->left, cnt), Helper(curr->right, cnt));
+        int L = depth(rt->left);
+        int R = depth(rt->right);
+        ans = max(ans, L + R + 1);
+        return max(L, R) + 1;
     }
-
+public:
     int diameterOfBinaryTree(TreeNode* root) {
-        int cnt = 0;
-        if (root == nullptr) return 0;
-        cnt = Helper(root->left, cnt) + Helper(root->right, cnt);
-        return cnt;
+        ans = 1;
+        depth(root);
+        return ans - 1;
     }
 };
