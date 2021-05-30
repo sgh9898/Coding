@@ -2,12 +2,9 @@ class Solution {
 public:
     bool stoneGame(vector<int>& piles) {
         int limit = piles.size();
-        vector<int> dp(limit, 0);
 
-        // initilization
-        for (int i = 0; i < limit; i++) {
-            dp[i] = piles[i];
-        }
+        // initialization
+        vector<int> dp = piles;
 
         // how much more stones can player 1 get
         for (int i = limit - 2; i >= 0; i--) {
