@@ -3,10 +3,10 @@ public:
     bool canConstruct(string ransomNote, string magazine) {
         // can use array alternatively
         unordered_map<char, int> map;
-        for (char ch : s) {
+        for (char ch : ransomNote) {
             map[ch]++;
         }
-        for (char ch : t) {
+        for (char ch : magazine) {
             if (map.count(ch)) {
                 map[ch]--;
                 if (map[ch] < 0) {
@@ -14,8 +14,6 @@ public:
                 } else if (map[ch] == 0) {
                     map.erase(ch);
                 }
-            } else {
-                return false;
             }
         }
         return map.empty();
