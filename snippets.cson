@@ -1,0 +1,67 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.cpp':
+    'Begin()':
+      'prefix': 'beg'
+      'body': 'begin()'
+
+    'End()':
+      'prefix': 'end'
+      'body': 'end()'
+
+    'Push Back':
+      'prefix': 'pb'
+      'body': 'push_back(${1:/* data */});$2'
+
+    'Pop Back':
+      'prefix': 'pop'
+      'body': 'pop_back()'
+
+    'Sort':
+      'prefix': 'sort'
+      'body': 'sort(${1:/* container */}.begin(), ${1:/* container */}.end()$2);\n$3'
+
+    'For Loop':
+      'prefix': 'for'
+      'body': 'for (int ${1:i} = ${2:0}; ${1:i} < ${3:count}; ${1:i}++) {\n\t${4:/* code */}\n}'
+
+    'For Each':
+      'prefix': 'for each'
+      'body': 'for (${1:int} ${2:/* element */} : ${3:/* container */}) {\n\t${4:/* code */}\n}'
+
+    'Iteration':
+      'prefix': 'for iter'
+      'body': 'for (auto ${1:/* container */} = $2.begin(); ${1:/* container */} != $2.end(); ${1:/* container */}++) {\n\t${4:/* code */}\n}'
+
+    'Else':
+      'prefix': 'else'
+      'body': 'else {\n\t${1:/* code */}\n}'
+
+    'Unordered Map':
+      'prefix': 'unordered_map'
+      'body': 'unordered_map<${1:int}, ${2:int}> $3'
+
+'.source.sql':
+  'Select From':
+    'prefix': 'sel'
+    'body': 'select ${1:/* data */}\nfrom ${2:/* table */}'
