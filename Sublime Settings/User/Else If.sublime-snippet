@@ -1,0 +1,9 @@
+<snippet>
+	<description>Else If</description>
+	<content><![CDATA[
+else if {
+	
+}]]></content>
+	<tabTrigger>else if</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

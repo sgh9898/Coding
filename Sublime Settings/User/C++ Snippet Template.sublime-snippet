@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<snippet>
+	<description>${1:/* description */}</description>
+	<content>${2:/* content */}</content>
+	<tabTrigger>${3:/* trigger */}</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>
+sublime-snippet
+]]></content>
+	<description>C++ Template</description>>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cpp template</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.xml</scope>
+</snippet>

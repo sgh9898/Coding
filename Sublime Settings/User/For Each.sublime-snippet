@@ -1,0 +1,12 @@
+<snippet>
+	<description>For Each</description>
+	<content><![CDATA[
+for (${1:int} ${2:/* element */} : ${3:/* container */}) {
+	${0:/* code */}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>for each</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
