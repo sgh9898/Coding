@@ -1,9 +1,0 @@
-<snippet>
-	<description>Else</description>
-	<content><![CDATA[
-else {
-	
-}]]></content>
-	<tabTrigger>else</tabTrigger>
-	<scope>source.c++</scope>
-</snippet>
